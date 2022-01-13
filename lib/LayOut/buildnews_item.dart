@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:intl/intl.dart';
 import 'package:newsapp/Screens/custom_route.dart';
 import 'package:newsapp/Screens/web_view_screen.dart';
 
@@ -50,7 +51,7 @@ class NewsMainScreen extends StatelessWidget {
                               Expanded(
                                 child: Text(cubit.newsList[index]['title'] ,
                                   style: Theme.of(context).textTheme.bodyText2,
-                                  maxLines: 3,
+                                  maxLines: 2,
                                   overflow: TextOverflow.ellipsis,
                                 ),
                               ),
